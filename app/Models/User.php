@@ -4,11 +4,13 @@ namespace App\Models;
 
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
 
-use Illuminate\Database\Eloquent\Casts\Attribute;
+
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
+
+use Illuminate\Database\Eloquent\Casts\Attribute;
 
 class User extends Authenticatable
 {
@@ -45,11 +47,11 @@ class User extends Authenticatable
         'password' => 'hashed',
     ];
 
-    protected function name(): Attribute
+    protected function name():Attribute
     {
         return new Attribute(
-            get: fn($value) => ucwords($value),  //when getting from db first char of a word is upper cased
-            set: fn($value) => strtolower($value)   //when saving to db every char is lower cased
+            get: fn($value) => ucwords($value),
+            set: fn($value) => strtolower($value)
         );
     }
 }

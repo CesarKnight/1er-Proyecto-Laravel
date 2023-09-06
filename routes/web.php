@@ -18,7 +18,7 @@ use App\Http\Controllers\categoriesController;
 Route::get('/', HomepageController::class);
 
 Route::controller(CategoriesController::class)->group(function(){
-    Route::get('categories','index'); 
-    Route::get('categories/search', 'search');
-    Route::get('categories/{fet}', 'show');
+    Route::get('categories','index')->name('categories.index'); 
+    Route::get('categories/search', 'search')->name('categories.search');
+    Route::get('categories/{fet}', 'show')->name('categories.show');
 });
