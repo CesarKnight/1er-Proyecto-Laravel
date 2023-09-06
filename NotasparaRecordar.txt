@@ -1,0 +1,35 @@
+Learning laravel
+
+App funciona
+
+web -> controller(getdatafrom model) -> view
+
+Model se refiere a base de datos
+La base de datos puede ser creada y actualizada con migraciones
+
+Migraciones == git pero para la base de datos
+
+< Comandos utiles que vienen con laravel >
+
+//// Controllers ///
+php artisan make:controller 'insert string name'    //crear los archivos y estructuras necesarias
+
+/// Migrations ///
+php artisan make:migration 'insert string name'                 // crear las estructuras necesarias 
+php artisan make:migration create_'insert string name'_table     // ahora tambien te crea la tabla 
+php artisan migrate                                         // ejecuta todas las migraciones que no esten en la base de datos
+     //cada vez que se realiza una migracion pone a todas las tablas agregadas una etiqueta de lote
+     // al revertir los cambios se revierte los agregados en el ultimo lote
+php artisan migrate:rollback                        //revertir cambios
+php artisan migrate:fresh                           // actualizar cambios dentro de tablas destruyendo todo 
+php artisan migrate:refresh                         // es para usar el metodo down y up de las migraciones
+
+///  Models    ///
+
+php artisan make:model 'insert string name' //con esto puedes usar el artisan tinker para meter dato
+                                             // a la base de datos, si o si tiene que ser todo en ingles
+                                             // y singular
+php artisan tinker            //editor de base de datos
+     use app/models/nombre    // usar un modelo, se crea un modelo por tabla y se usa por tabla 
+     // buscar en la documentacion de laravel para usar  mas cosas del tinker
+     
