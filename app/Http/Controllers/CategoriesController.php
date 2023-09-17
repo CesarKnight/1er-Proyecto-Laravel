@@ -16,7 +16,8 @@ class CategoriesController extends Controller
         return view('categories.search');  
     }
 
-    public function show($fet){
-        return view('categories.show',compact('fet'));
+    public function show($id){
+        $category = Category::find($id);
+        return view('categories.show',compact('category'));
     }
 }
