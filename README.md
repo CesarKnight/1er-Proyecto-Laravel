@@ -1,4 +1,4 @@
-<p align="center"><a href=null target="_blank"><img src= images\touhou-fumo.gif alt="Cirno">
+<p align="center"><a target="_blank"><img src= images\touhou-fumo.gif alt="Cirno">
 </a></p?> 
 
 ## Primera Paginaaaa! :D
