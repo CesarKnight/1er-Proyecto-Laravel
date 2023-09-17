@@ -1,3 +1,10 @@
+<p align="center"><a href=null target="_blank"><img src= images\touhou-fumo.gif alt="Cirno">
+</a></p?> 
+
+## Primera Paginaaaa! :D
+Este es mi primer proyecto en laravel (y tambien mi primera pagina web). En este proyecto aprendí (ojala que si) a usar el framework, programar lo necesario en PHP y ojala hacer un bonito diseño de la pagina. Greetings for the future!
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
