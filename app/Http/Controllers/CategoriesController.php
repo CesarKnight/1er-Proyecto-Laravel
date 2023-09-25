@@ -22,6 +22,14 @@ class CategoriesController extends Controller
     }
 
     public function store(Request $request){
+        // creamos una variable donde se guardara los datos del formulario
+        // y guardamos la variable del orm en la base de datos
+       
+        $request->validate([
+            'name' => 'required',
+            'description' => 'required'
+        ]);
+        
         $category = new Category();
 
         $category->name = $request->name;
@@ -40,6 +48,16 @@ class CategoriesController extends Controller
     }
 
     public function update(Request $request,Category $category){
-    return  $category;
+        
+        $request->validate([
+            'name' => 'required',
+            'description' => 'required'
+        ]);
+        
+        $category->name = $request->name;
+        $category->description = $request->description;
+
+        $category->save();
+        return redirect()->route('categories.show',$category);
     }
 }

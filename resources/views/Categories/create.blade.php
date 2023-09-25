@@ -11,13 +11,25 @@
         <label for=""> 
             Nombre:
             <br>
-            <input type="text" name="name">
+            <input type="text" name="name" value="{{old('name')}}">
+            
+            @error('name')
+                <br>
+                    <span>  {{$message}}*   </span>
+                <br>    
+            @enderror
         </label>
         <br>
         <label for="">
             Descripcion:
             <br>
-            <textarea name="description" cols="30" rows="3"></textarea>
+            <textarea name="description" cols="30" rows="3">{{old('description')}}</textarea>
+            
+            @error('description')
+                <br>
+                    <span>  {{$message}}*   </span>
+                <br>    
+            @enderror
         </label>
         <br>
         <button type="submit"> Enviar cochinada </button>

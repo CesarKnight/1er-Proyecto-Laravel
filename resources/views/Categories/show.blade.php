@@ -1,5 +1,5 @@
 @extends('layouts.plantilla')
-@section('title','Showing '.$category->name)
+@section('title',''.$category->name)
 @section('content')
     <h1> omg te gustó {{$category->name}} ? </h1>
     <p>{{ $category->description }}</p>

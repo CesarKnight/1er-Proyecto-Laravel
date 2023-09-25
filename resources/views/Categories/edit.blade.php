@@ -16,13 +16,25 @@
             <br> 
             <input type="text" name="name" value="{{$category->name}}">
             {{-- para los textbox si se usa value para rellenar el texto --}}
-        </label> 
+            
+            @error('name')
+                <br>
+                    <span>  {{$message}}*   </span>
+                <br>    
+            @enderror
+        </label>    
         <br>  
         <label for="">
             Descripcion: 
             <br> 
             <textarea name ="description", cols="30" rows = 5 >{{$category->description}}</textarea>
             {{-- para los text area solo poner texto dentro de los >< --}}
+            
+            @error('description')
+                <br>
+                    <span>  {{$message}}*   </span>
+                <br>    
+            @enderror
         </label>
         <br>
         <button type="submit"> Actualizar cochinada </button>

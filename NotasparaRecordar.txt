@@ -33,3 +33,6 @@ php artisan tinker            //editor de base de datos
      use app/models/nombre    // usar un modelo, se crea un modelo por tabla y se usa por tabla 
      // buscar en la documentacion de laravel para usar  mas cosas del tinker
      
+/// Views///
+son html con plantillas de blade, para pasar datos a traves de las plantillas se debe pasar
+por array de datos en una variable y luego usar tal variable en el view

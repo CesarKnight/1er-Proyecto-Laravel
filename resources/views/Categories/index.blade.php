@@ -5,6 +5,8 @@
     <a href="{{route('homepage')}}"> Volver a la pagina principal</a>
     <h1> aqui encontraras todas las sabrosusas posibles </h1>
     <a href={{route('categories.search')}}> buscar entre toda la basuraaa </a>
+    <br>
+    <a href="{{route('categories.create')}}">crear una nueva categoria</a>
     <ul>
         @foreach ($categories as $category)
             <li> 
