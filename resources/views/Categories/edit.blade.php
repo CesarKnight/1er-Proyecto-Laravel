@@ -1,5 +1,5 @@
 @extends('layouts.plantilla')
-@section('title','Edit a Category')
+@section('title','Editar una categoria')
 
 @section('content')
   <h1> Editar la categoria (ajajaj te equivocaste) </h1>

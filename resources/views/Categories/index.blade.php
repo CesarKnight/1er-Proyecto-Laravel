@@ -1,5 +1,5 @@
 @extends('layouts.plantilla')
-@section('title','index')
+@section('title','Indice')
 
 @section('content')
     <a href="{{route('homepage')}}"> Volver a la pagina principal</a>

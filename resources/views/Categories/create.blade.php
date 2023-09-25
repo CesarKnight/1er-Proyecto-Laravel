@@ -1,5 +1,5 @@
 @extends('layouts.plantilla')
-@section('title','Create a Category')
+@section('title','Crear una categoria')
 
 @section('content')
   <h1>  Creacion de Categoria (el horror) </h1>

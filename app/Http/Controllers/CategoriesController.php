@@ -25,10 +25,12 @@ class CategoriesController extends Controller
         // creamos una variable donde se guardara los datos del formulario
         // y guardamos la variable del orm en la base de datos
        
-        $request->validate([
+        $request->validate([        
             'name' => 'required',
             'description' => 'required'
         ]);
+        // para mas reglas de validacion mirar 
+        // https://laravel.com/docs/10.x/validation#main-content
         
         $category = new Category();
 
