@@ -17,7 +17,7 @@
         <label for="">
             Descripcion:
             <br>
-            <textarea name="description " cols="10" rows="3"></textarea>
+            <textarea name="description" cols="30" rows="3"></textarea>
         </label>
         <br>
         <button type="submit"> Enviar cochinada </button>

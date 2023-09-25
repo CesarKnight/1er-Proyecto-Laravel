@@ -4,8 +4,10 @@
 @section('content')
   <h1> Editar la categoria (ajajaj te equivocaste) </h1>
     
-    <form action="{{route('categories.update')}}" method="POST">
-        
+    <form action="{{route('categories.update',$category)}}" method="POST">
+        {{-- el metodo put es exclusivo de laravel (creo) pero en si html no entiende ese metodo
+            por lo tanto al declarar del formulario (form) se pone el metodo post 
+            pero dentro de este se escribe @method(put) para aclarar el metodo de edicion --}}
         @csrf
         @method('put')
 
@@ -19,8 +21,8 @@
         <label for="">
             Descripcion: 
             <br> 
-            <textarea name ="description", cols="100" rows = 5 >{{$category->description}}</textarea>
-            {{-- para los tet area solo poner dentro de los >< --}}
+            <textarea name ="description", cols="30" rows = 5 >{{$category->description}}</textarea>
+            {{-- para los text area solo poner texto dentro de los >< --}}
         </label>
         <br>
         <button type="submit"> Actualizar cochinada </button>

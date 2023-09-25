@@ -39,7 +39,7 @@ class CategoriesController extends Controller
         return view('Categories.edit', compact('category'));
     }
 
-    public function update(Category $category){
+    public function update(Request $request,Category $category){
     return  $category;
     }
 }
